@@ -17,7 +17,7 @@ let aldatu = () => {
     let isbn = document.querySelector('#isbn');
     isbn.value = datubasea[index].isbn;
 
-    let date = document.querySelector('#data');
+    let date = document.querySelector('#data'); //lo de dentro se los parenetesis es la palabra que este en el index puesta
     date.value = datubasea[index].data;
 }
 
