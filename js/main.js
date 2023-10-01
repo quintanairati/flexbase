@@ -39,4 +39,30 @@ botoia1.onclick = () => {
     aldatu();
 }
 
+
+let bilatu = () => {
+    let isbn = document.querySelector('#isbn');
+    //que busque en la DB la isbn y que me de el index
+    //index = 
+    isbn.value = datubasea[index].isbn;
+
+    let irudia = document.querySelector("#irudia");
+    irudia.src = base + datubasea[index].filename;
+    
+    let izenburu = document.querySelector('#izenburu');
+    izenburu.value = datubasea[index].izenburua;
+
+    let egile = document.querySelector('#egilea');
+    egile.value = datubasea[index].egilea;
+
+    let date = document.querySelector('#data');
+    date.value = datubasea[index].data;
+}
+
+let botoia3 = document.querySelector("#data")
+botoia3.onclick = () => {
+   bilatu();
+}
+
+
 aldatu()
