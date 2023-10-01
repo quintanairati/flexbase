@@ -21,9 +21,21 @@ let aldatu = () => {
     date.value = datubasea[index].data;
 }
 
-let botoia = document.querySelector("#data")
-botoia.onclick = () => {
-    index++;
+let botoia2 = document.querySelector("#data")
+botoia2.onclick = () => {
+    if (index = 4)
+        index = 0;
+    else 
+        index ++;
+    aldatu();
+}
+
+let botoia1 = document.querySelector("#data")
+botoia1.onclick = () => {
+    if (index = 0)
+        index = 4;
+    else 
+        index --;
     aldatu();
 }
 
